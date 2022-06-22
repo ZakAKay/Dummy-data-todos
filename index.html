@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="todo.js"></script>
-    <title>Dummy to do list</title>
+    <script src="./todo.js"></script>
+    <title>Dummy To Do List</title>
 </head>
 <body>
     
-</body>
-</html><button onclick="fetchTodos()">Fetch Todos</button>
+
+    <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
+    
+
+    <form>
+
+        <label for="number_input">Enter a number between 1 and 10</label>
+        <input type="number" id="number_input" min="1" max="10">
+
+        <button onclick="filterById()" type="button">Todos by User</button>
+        <button onclick="clearTodos()"type=button>Clear Todos</button>
+        
+
+    </form>
+
+
+
     <ol id="todo-list">
     <!-- LIs will go here -->
     </ol>
